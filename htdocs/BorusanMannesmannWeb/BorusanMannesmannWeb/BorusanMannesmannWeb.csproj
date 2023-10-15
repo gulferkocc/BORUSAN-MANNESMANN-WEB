@@ -1,0 +1,738 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{19B79E9B-CC55-4438-86F5-9AF510E7E835}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BorusanMannesmannWeb</RootNamespace>
+    <AssemblyName>BorusanMannesmannWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44376</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\StyleSheet1.css" />
+    <Content Include="img\altin-orumcek-odul-gorseli-1.jpg" />
+    <Content Include="img\borusan_6_sigma_logo-01.png" />
+    <Content Include="img\daimay6s.png" />
+    <Content Include="img\Ekran görüntüsü 2023-08-18 144342.png" />
+    <Content Include="img\icon-01.png" />
+    <Content Include="img\icon-02.png" />
+    <Content Include="img\icon-04.png" />
+    <Content Include="img\icon-05.png" />
+    <Content Include="img\images.jpeg" />
+    <Content Include="img\images1.jpeg" />
+    <Content Include="img\img-6-sigma-fakultesi.png" />
+    <Content Include="img\img-liderlik-fakultesi.png" />
+    <Content Include="img\img-satis-fakultesi.png" />
+    <Content Include="img\IMG_0908.JPG" />
+    <Content Include="img\IMG_0910.JPG" />
+    <Content Include="img\IMG_0911.JPG" />
+    <Content Include="img\IMG_0913.jpg" />
+    <Content Include="img\indir %281%29.jpeg" />
+    <Content Include="img\indir.jpeg" />
+    <Content Include="img\indir.png" />
+    <Content Include="img\_HMA7976 copy.jpg" />
+    <Content Include="js\JavaScript.js" />
+    <Content Include="Web.config" />
+    <Content Include="webforms\bm-vobarno.aspx" />
+    <Content Include="webforms\borusanholding.aspx" />
+    <Content Include="webforms\index.aspx" />
+    <Content Include="webforms\tarihce.aspx" />
+    <Content Include="webforms\hakkinda.aspx" />
+    <Content Include="webforms\misyon-vizyon.aspx" />
+    <Content Include="webforms\kilometreTas.aspx" />
+    <Content Include="webforms\kurucu.aspx" />
+    <Content Include="webforms\uretim.aspx" />
+    <Content Include="webforms\turuncu-etik.aspx" />
+    <Content Include="webforms\kurumsal-sorumluluk.aspx" />
+    <Content Include="webforms\borusanEsit.aspx" />
+    <Content Include="webforms\kadinlarinGüclenmesi.aspx" />
+    <Content Include="webforms\bKocabiyik.aspx" />
+    <Content Include="webforms\efesv.aspx" />
+    <Content Include="webforms\okyonus.aspx" />
+    <Content Include="webforms\bcagdas.aspx" />
+    <Content Include="webforms\sanat.aspx" />
+    <Content Include="webforms\kurumsal-yonetim.aspx" />
+    <Content Include="webforms\ortaklikyapi.aspx" />
+    <Content Include="webforms\kar-dagitim.aspx" />
+    <Content Include="webforms\bagis.aspx" />
+    <Content Include="webforms\kyonetim-ilke.aspx" />
+    <Content Include="webforms\sirket-ana-sozlesme.aspx" />
+    <Content Include="webforms\ticaretSicil.aspx" />
+    <Content Include="webforms\genel-kurul.aspx" />
+    <Content Include="webforms\gkurul-calisma.aspx" />
+    <Content Include="webforms\formlar.aspx" />
+    <Content Include="webforms\birlesmeler.aspx" />
+    <Content Include="webforms\raporlar.aspx" />
+    <Content Include="webforms\faaliyetr.aspx" />
+    <Content Include="webforms\denetimr.aspx" />
+    <Content Include="webforms\sunumlar.aspx" />
+    <Content Include="webforms\özel-durum-açiklamalari.aspx" />
+    <Content Include="webforms\bilgilendirme.aspx" />
+    <Content Include="webforms\ücretlendirme.aspx" />
+    <Content Include="webforms\iletisim.aspx" />
+    <Content Include="webforms\celik-grubu.aspx" />
+    <Content Include="webforms\borusan-mannesmann.aspx" />
+    <Content Include="webforms\bmboru-yatirim.aspx" />
+    <Content Include="webforms\borcelik.aspx" />
+    <Content Include="webforms\istikbalt.aspx" />
+    <Content Include="webforms\enerjig.aspx" />
+    <Content Include="webforms\distg.aspx" />
+    <Content Include="webforms\botomotiv.aspx" />
+    <Content Include="webforms\parcapazari.aspx" />
+    <Content Include="webforms\borusankedi.aspx" />
+    <Content Include="webforms\barac-ihale.aspx" />
+    <Content Include="webforms\supsan.aspx" />
+    <Content Include="webforms\lojistikg.aspx" />
+    <Content Include="webforms\ürünk.aspx" />
+    <Content Include="webforms\ihracat-fazlasi-ürüns.aspx" />
+    <Content Include="webforms\enerji.aspx" />
+    <Content Include="webforms\su.aspx" />
+    <Content Include="webforms\konst.aspx" />
+    <Content Include="webforms\otomotiv-endüstriyel-uyg.aspx" />
+    <Content Include="webforms\calisan.aspx" />
+    <Content Include="webforms\müsteri.aspx" />
+    <Content Include="webforms\toplum.aspx" />
+    <Content Include="webforms\dünya.aspx" />
+    <Content Include="webforms\tedarikci.aspx" />
+    <Content Include="webforms\borusanlı-olmak.aspx" />
+    <Content Include="webforms\is-firsat.aspx" />
+    <Content Include="webforms\ise-alim-sürec.aspx" />
+    <Content Include="webforms\bakademi.aspx" />
+    <Content Include="webforms\alpha.aspx" />
+    <Content Include="webforms\blog.aspx" />
+    <Content Include="webforms\hikaye.aspx" />
+    <Content Include="webforms\ofis.aspx" />
+    <Content Include="webforms\tesis.aspx" />
+    <Content Include="webforms\bayi.aspx" />
+    <Content Include="webforms\boru-hatti.aspx" />
+    <Content Include="webforms\voc.aspx" />
+    <Content Include="webforms\bm-pipe-us.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="webforms\bm-vobarno.aspx.cs">
+      <DependentUpon>bm-vobarno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\bm-vobarno.aspx.designer.cs">
+      <DependentUpon>bm-vobarno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\borusanholding.aspx.cs">
+      <DependentUpon>borusanholding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\borusanholding.aspx.designer.cs">
+      <DependentUpon>borusanholding.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\tarihce.aspx.cs">
+      <DependentUpon>tarihce.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\tarihce.aspx.designer.cs">
+      <DependentUpon>tarihce.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\hakkinda.aspx.cs">
+      <DependentUpon>hakkinda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\hakkinda.aspx.designer.cs">
+      <DependentUpon>hakkinda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\misyon-vizyon.aspx.cs">
+      <DependentUpon>misyon-vizyon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\misyon-vizyon.aspx.designer.cs">
+      <DependentUpon>misyon-vizyon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\kilometreTas.aspx.cs">
+      <DependentUpon>kilometreTas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\kilometreTas.aspx.designer.cs">
+      <DependentUpon>kilometreTas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\kurucu.aspx.cs">
+      <DependentUpon>kurucu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\kurucu.aspx.designer.cs">
+      <DependentUpon>kurucu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\uretim.aspx.cs">
+      <DependentUpon>uretim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\uretim.aspx.designer.cs">
+      <DependentUpon>uretim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\turuncu-etik.aspx.cs">
+      <DependentUpon>turuncu-etik.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\turuncu-etik.aspx.designer.cs">
+      <DependentUpon>turuncu-etik.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\kurumsal-sorumluluk.aspx.cs">
+      <DependentUpon>kurumsal-sorumluluk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\kurumsal-sorumluluk.aspx.designer.cs">
+      <DependentUpon>kurumsal-sorumluluk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\borusanEsit.aspx.cs">
+      <DependentUpon>borusanEsit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\borusanEsit.aspx.designer.cs">
+      <DependentUpon>borusanEsit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\kadinlarinGüclenmesi.aspx.cs">
+      <DependentUpon>kadinlarinGüclenmesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\kadinlarinGüclenmesi.aspx.designer.cs">
+      <DependentUpon>kadinlarinGüclenmesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\bKocabiyik.aspx.cs">
+      <DependentUpon>bKocabiyik.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\bKocabiyik.aspx.designer.cs">
+      <DependentUpon>bKocabiyik.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\efesv.aspx.cs">
+      <DependentUpon>efesv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\efesv.aspx.designer.cs">
+      <DependentUpon>efesv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\okyonus.aspx.cs">
+      <DependentUpon>okyonus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\okyonus.aspx.designer.cs">
+      <DependentUpon>okyonus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\bcagdas.aspx.cs">
+      <DependentUpon>bcagdas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\bcagdas.aspx.designer.cs">
+      <DependentUpon>bcagdas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\sanat.aspx.cs">
+      <DependentUpon>sanat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\sanat.aspx.designer.cs">
+      <DependentUpon>sanat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\kurumsal-yonetim.aspx.cs">
+      <DependentUpon>kurumsal-yonetim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\kurumsal-yonetim.aspx.designer.cs">
+      <DependentUpon>kurumsal-yonetim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\ortaklikyapi.aspx.cs">
+      <DependentUpon>ortaklikyapi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\ortaklikyapi.aspx.designer.cs">
+      <DependentUpon>ortaklikyapi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\kar-dagitim.aspx.cs">
+      <DependentUpon>kar-dagitim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\kar-dagitim.aspx.designer.cs">
+      <DependentUpon>kar-dagitim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\bagis.aspx.cs">
+      <DependentUpon>bagis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\bagis.aspx.designer.cs">
+      <DependentUpon>bagis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\kyonetim-ilke.aspx.cs">
+      <DependentUpon>kyonetim-ilke.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\kyonetim-ilke.aspx.designer.cs">
+      <DependentUpon>kyonetim-ilke.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\sirket-ana-sozlesme.aspx.cs">
+      <DependentUpon>sirket-ana-sozlesme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\sirket-ana-sozlesme.aspx.designer.cs">
+      <DependentUpon>sirket-ana-sozlesme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\ticaretSicil.aspx.cs">
+      <DependentUpon>ticaretSicil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\ticaretSicil.aspx.designer.cs">
+      <DependentUpon>ticaretSicil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\genel-kurul.aspx.cs">
+      <DependentUpon>genel-kurul.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\genel-kurul.aspx.designer.cs">
+      <DependentUpon>genel-kurul.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\gkurul-calisma.aspx.cs">
+      <DependentUpon>gkurul-calisma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\gkurul-calisma.aspx.designer.cs">
+      <DependentUpon>gkurul-calisma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\formlar.aspx.cs">
+      <DependentUpon>formlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\formlar.aspx.designer.cs">
+      <DependentUpon>formlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\birlesmeler.aspx.cs">
+      <DependentUpon>birlesmeler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\birlesmeler.aspx.designer.cs">
+      <DependentUpon>birlesmeler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\raporlar.aspx.cs">
+      <DependentUpon>raporlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\raporlar.aspx.designer.cs">
+      <DependentUpon>raporlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\faaliyetr.aspx.cs">
+      <DependentUpon>faaliyetr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\faaliyetr.aspx.designer.cs">
+      <DependentUpon>faaliyetr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\denetimr.aspx.cs">
+      <DependentUpon>denetimr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\denetimr.aspx.designer.cs">
+      <DependentUpon>denetimr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\sunumlar.aspx.cs">
+      <DependentUpon>sunumlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\sunumlar.aspx.designer.cs">
+      <DependentUpon>sunumlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\özel-durum-açiklamalari.aspx.cs">
+      <DependentUpon>özel-durum-açiklamalari.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\özel-durum-açiklamalari.aspx.designer.cs">
+      <DependentUpon>özel-durum-açiklamalari.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\bilgilendirme.aspx.cs">
+      <DependentUpon>bilgilendirme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\bilgilendirme.aspx.designer.cs">
+      <DependentUpon>bilgilendirme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\ücretlendirme.aspx.cs">
+      <DependentUpon>ücretlendirme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\ücretlendirme.aspx.designer.cs">
+      <DependentUpon>ücretlendirme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\iletisim.aspx.cs">
+      <DependentUpon>iletisim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\iletisim.aspx.designer.cs">
+      <DependentUpon>iletisim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\celik-grubu.aspx.cs">
+      <DependentUpon>celik-grubu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\celik-grubu.aspx.designer.cs">
+      <DependentUpon>celik-grubu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\borusan-mannesmann.aspx.cs">
+      <DependentUpon>borusan-mannesmann.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\borusan-mannesmann.aspx.designer.cs">
+      <DependentUpon>borusan-mannesmann.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\bmboru-yatirim.aspx.cs">
+      <DependentUpon>bmboru-yatirim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\bmboru-yatirim.aspx.designer.cs">
+      <DependentUpon>bmboru-yatirim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\borcelik.aspx.cs">
+      <DependentUpon>borcelik.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\borcelik.aspx.designer.cs">
+      <DependentUpon>borcelik.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\istikbalt.aspx.cs">
+      <DependentUpon>istikbalt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\istikbalt.aspx.designer.cs">
+      <DependentUpon>istikbalt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\enerjig.aspx.cs">
+      <DependentUpon>enerjig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\enerjig.aspx.designer.cs">
+      <DependentUpon>enerjig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\distg.aspx.cs">
+      <DependentUpon>distg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\distg.aspx.designer.cs">
+      <DependentUpon>distg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\botomotiv.aspx.cs">
+      <DependentUpon>botomotiv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\botomotiv.aspx.designer.cs">
+      <DependentUpon>botomotiv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\parcapazari.aspx.cs">
+      <DependentUpon>parcapazari.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\parcapazari.aspx.designer.cs">
+      <DependentUpon>parcapazari.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\borusankedi.aspx.cs">
+      <DependentUpon>borusankedi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\borusankedi.aspx.designer.cs">
+      <DependentUpon>borusankedi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\barac-ihale.aspx.cs">
+      <DependentUpon>barac-ihale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\barac-ihale.aspx.designer.cs">
+      <DependentUpon>barac-ihale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\supsan.aspx.cs">
+      <DependentUpon>supsan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\supsan.aspx.designer.cs">
+      <DependentUpon>supsan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\lojistikg.aspx.cs">
+      <DependentUpon>lojistikg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\lojistikg.aspx.designer.cs">
+      <DependentUpon>lojistikg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\ürünk.aspx.cs">
+      <DependentUpon>ürünk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\ürünk.aspx.designer.cs">
+      <DependentUpon>ürünk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\ihracat-fazlasi-ürüns.aspx.cs">
+      <DependentUpon>ihracat-fazlasi-ürüns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\ihracat-fazlasi-ürüns.aspx.designer.cs">
+      <DependentUpon>ihracat-fazlasi-ürüns.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\enerji.aspx.cs">
+      <DependentUpon>enerji.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\enerji.aspx.designer.cs">
+      <DependentUpon>enerji.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\su.aspx.cs">
+      <DependentUpon>su.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\su.aspx.designer.cs">
+      <DependentUpon>su.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\konst.aspx.cs">
+      <DependentUpon>konst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\konst.aspx.designer.cs">
+      <DependentUpon>konst.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\otomotiv-endüstriyel-uyg.aspx.cs">
+      <DependentUpon>otomotiv-endüstriyel-uyg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\otomotiv-endüstriyel-uyg.aspx.designer.cs">
+      <DependentUpon>otomotiv-endüstriyel-uyg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\calisan.aspx.cs">
+      <DependentUpon>calisan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\calisan.aspx.designer.cs">
+      <DependentUpon>calisan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\müsteri.aspx.cs">
+      <DependentUpon>müsteri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\müsteri.aspx.designer.cs">
+      <DependentUpon>müsteri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\toplum.aspx.cs">
+      <DependentUpon>toplum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\toplum.aspx.designer.cs">
+      <DependentUpon>toplum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\dünya.aspx.cs">
+      <DependentUpon>dünya.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\dünya.aspx.designer.cs">
+      <DependentUpon>dünya.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\tedarikci.aspx.cs">
+      <DependentUpon>tedarikci.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\tedarikci.aspx.designer.cs">
+      <DependentUpon>tedarikci.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\borusanlı-olmak.aspx.cs">
+      <DependentUpon>borusanlı-olmak.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\borusanlı-olmak.aspx.designer.cs">
+      <DependentUpon>borusanlı-olmak.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\is-firsat.aspx.cs">
+      <DependentUpon>is-firsat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\is-firsat.aspx.designer.cs">
+      <DependentUpon>is-firsat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\ise-alim-sürec.aspx.cs">
+      <DependentUpon>ise-alim-sürec.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\ise-alim-sürec.aspx.designer.cs">
+      <DependentUpon>ise-alim-sürec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\bakademi.aspx.cs">
+      <DependentUpon>bakademi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\bakademi.aspx.designer.cs">
+      <DependentUpon>bakademi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\alpha.aspx.cs">
+      <DependentUpon>alpha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\alpha.aspx.designer.cs">
+      <DependentUpon>alpha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\blog.aspx.cs">
+      <DependentUpon>blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\blog.aspx.designer.cs">
+      <DependentUpon>blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\hikaye.aspx.cs">
+      <DependentUpon>hikaye.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\hikaye.aspx.designer.cs">
+      <DependentUpon>hikaye.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\ofis.aspx.cs">
+      <DependentUpon>ofis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\ofis.aspx.designer.cs">
+      <DependentUpon>ofis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\tesis.aspx.cs">
+      <DependentUpon>tesis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\tesis.aspx.designer.cs">
+      <DependentUpon>tesis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\bayi.aspx.cs">
+      <DependentUpon>bayi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\bayi.aspx.designer.cs">
+      <DependentUpon>bayi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\boru-hatti.aspx.cs">
+      <DependentUpon>boru-hatti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\boru-hatti.aspx.designer.cs">
+      <DependentUpon>boru-hatti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\voc.aspx.cs">
+      <DependentUpon>voc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\voc.aspx.designer.cs">
+      <DependentUpon>voc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webforms\bm-pipe-us.aspx.cs">
+      <DependentUpon>bm-pipe-us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webforms\bm-pipe-us.aspx.designer.cs">
+      <DependentUpon>bm-pipe-us.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53706</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44376/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Bu proje bu bilgisayarda olmayan NuGet paketlerine başvuru yapıyor. Bunları indirmek için NuGet Paket Geri Yükleme'yi kullanın. Daha fazla bilgi için, bkz. http://go.microsoft.com/fwlink/?LinkID=322105. Eksik dosya: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
